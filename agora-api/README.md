@@ -9,8 +9,7 @@ The Agora API currently requires the following environmental variable for config
 ### Required Variables
 
 *   `SQLALCHEMY_DATABASE_URL`: The database connection URL. For example, `sqlite:///./sql_app.db` for a SQLite database.
-
-*   `LLM_CLIENT_DEFAULT_MODEL`: (Optional) Specifies the default LLM model to use if not explicitly provided in a request. Example: `google-gemini:gemini-2.0-flash`.
+*   `LLM_CLIENT_DEFAULT_MODEL`: Specifies the default LLM model to use if not explicitly provided in a request. Example: `google-gemini:gemini-2.0-flash`.
 *   `LLM_CLIENT_GOOGLE_GEMINI_API_KEY`: Your API key for accessing the Google Gemini LLM. This is required if you are using the `google-gemini` provider.
 
 ## Viewing the Documentation
