@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from agora_api.database.db import Base
 
+# SQLAlchemy Model
 class Agent(Base):
     __tablename__ = "agents"
 

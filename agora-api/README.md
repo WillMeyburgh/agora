@@ -9,3 +9,7 @@ The Agora API currently requires the following environmental variable for config
 ### Required Variables
 
 *   `SQLALCHEMY_DATABASE_URL`: The database connection URL. For example, `sqlite:///./sql_app.db` for a SQLite database.
+
+## Viewing the Documentation
+
+Once the API is running, you can view the interactive API documentation by navigating to the `/docs` endpoint in your web browser. For example, if your API is running locally on port 8000, you would visit `http://localhost:8000/docs`.
