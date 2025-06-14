@@ -3,7 +3,7 @@ load_dotenv()
 
 from fastapi import FastAPI
 from .database.db import engine, Base
-from .controller import index, health
+from .controller import index, health, agent
 from .database import models
 
 app = FastAPI()
@@ -14,3 +14,4 @@ def on_startup():
 
 app.include_router(index.router)
 app.include_router(health.router)
+app.include_router(agent.router)
