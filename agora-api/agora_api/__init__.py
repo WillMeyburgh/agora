@@ -3,7 +3,7 @@ load_dotenv()
 
 from fastapi import FastAPI
 from .database.db import engine, Base
-from .controller import index
+from .controller import index, health
 from .database import models
 
 app = FastAPI()
@@ -13,3 +13,4 @@ def on_startup():
     Base.metadata.create_all(bind=engine)
 
 app.include_router(index.router)
+app.include_router(health.router)
